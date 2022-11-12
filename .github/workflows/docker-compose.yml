@@ -21,7 +21,7 @@ jobs:
         compose-file: "./docker-compose.yml"
         up-flags: "--build"
         down-flags: "--volumes"
-        services: |
-          web_app_konsultasi
-          myadmin_app_konsultasi
-          db_app_konsultasi
+#         services: |
+#           web_app_konsultasi
+#           myadmin_app_konsultasi
+#           db_app_konsultasi
