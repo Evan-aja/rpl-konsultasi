@@ -1,0 +1,25 @@
+name: Go
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - uses: isbang/compose-action@v1.4.0
+      with:
+        compose-file: "./docker-compose.yml"
+        up-flags: "--build"
+        down-flags: "--volumes"
+        services: |
+          web_app_konsultasi
+          myadmin_app_konsultasi
+          db_app_konsultasi
+      env:
+        MYSQL_DATABASE: default_database
+        MYSQL_ROOT_PASSWORD: password
