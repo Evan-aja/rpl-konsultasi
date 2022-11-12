@@ -1,0 +1,39 @@
+version: '3'
+
+services:
+  web:
+    container_name: web_app_konsultasi
+    # build:
+    #   context: .
+    image: node
+    command: sh -c "yarn install && yarn run dev"
+    env_file: ".env"
+    working_dir: /app
+    ports:
+      - 3000:3000
+    volumes:
+      - .:/app:rw
+    depends_on:
+      - db
+    networks:
+      - network_app_konsultasi
+  
+  db:
+    container_name: db_app_konsultasi
+    image: postgres:alpine
+    env_file: ".env"
+    networks:
+      - network_app_konsultasi
+    volumes:
+      - dbcont:/var/lib/postgresql:rw
+
+networks:
+  network_app_konsultasi:
+    driver: bridge
+    name: network_app_konsultasi
+
+volumes:
+  .:
+    name: web_app_konsultasi_volume
+  dbcont:
+    name: db_app_konsultasi_volume
