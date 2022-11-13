@@ -6,6 +6,7 @@ services:
     image: node
     command: sh -c "npm install && npx prisma migrate dev --name init && npm run dev"
     env_file: ".env"
+    restart: always
     environment:
       DATABASE_URL: "mysql://root:$MYSQL_ROOT_PASSWORD@db/$MYSQL_DATABASE"
     working_dir: /app
@@ -38,6 +39,7 @@ services:
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
     container_name: myadmin_app_konsultasi
+    restart: always
     environment:
       PMA_HOST: db
     ports:

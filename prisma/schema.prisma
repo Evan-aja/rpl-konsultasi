@@ -9,3 +9,57 @@ datasource db {
   provider = "mysql"
   url      = env("DATABASE_URL")
 }
+
+model Civitas{
+  ID Int @id @default(autoincrement())
+  Name String?
+  Email String? @unique
+  Password String?
+  Departemen String
+  ProgramStudi String
+  Status String
+  Mahasiswa Mahasiswa?
+  Dosen Dosen?
+}
+
+model Mahasiswa{
+  ID Int @id @default(autoincrement())
+  Civitas Civitas @relation(fields: [CivitasID], references: [ID])
+  CivitasID Int @unique
+  NIM String
+}
+
+model Dosen{
+  iD Int @id @default(autoincrement())
+  Civitas Civitas @relation(fields: [CivitasID],references: [ID])
+  CivitasID Int @unique
+  NIP String
+}
+
+model Laporan{
+  ID Int @id @default(autoincrement())
+  NIP_NIM String
+  Penjelasan String?
+  ResponLaporan ResponLaporan?
+}
+
+model Komplain{
+  ID Int @id @default(autoincrement())
+  Judul String?
+  Penjelasan String?
+  ResponKomplain ResponKomplain?
+}
+
+model ResponLaporan{
+  ID Int @id @default(autoincrement())
+  Read Boolean
+  Laporan Laporan @relation(fields: [LaporanID],references: [ID])
+  LaporanID Int @unique
+}
+
+model ResponKomplain{
+  id Int @id @default(autoincrement())
+  Read Boolean
+  Komplain Komplain @relation(fields: [KomplainID],references: [ID])
+  KomplainID Int @unique
+}
