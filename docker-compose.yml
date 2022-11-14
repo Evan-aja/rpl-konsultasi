@@ -34,7 +34,7 @@ services:
     networks:
       - network_app_konsultasi
     volumes:
-        - dbcont:/var/lib/mysql:rw
+      - dbcont:/var/lib/mysql:rw
 
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
