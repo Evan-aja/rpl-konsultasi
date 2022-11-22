@@ -1,9 +1,7 @@
 export default function LamanLaporan(){
     return(
         <>
-           <body className="body">
             <div className="flex flex-nowrap">
-
             <div className="flex-none p-4 m-2">
             <div className="relative">
                 <div className="relative">
@@ -22,16 +20,13 @@ export default function LamanLaporan(){
             </div>
 
             
-            <div className="block rounded-lg shadow-lg bg-gray-400 w-5/12 h-auto text-left">
+            <div className="block rounded-lg shadow-lg bg-gray-400 w-1/2 h-auto text-left mb-40">
             <div className="flex-none">
             <div className="Submission1">
                 <div className="mb-3 w-full inline-flex">
-                    <label htmlFor="exampleText0" className="form-label inline-block mb-2 text-white"
-                    >Judul:</label
-                    >
-                    <div className="gap">
-                    ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ 
-                    </div>
+                    <label htmlFor="exampleText0" className="form-label inline-block mb-2 text-white ml-2 mt-2"
+                    >Judul:</label>
+                    
                     <input
                     type="text"
                     className="
@@ -61,17 +56,13 @@ export default function LamanLaporan(){
                     <label htmlFor="exampleFormControlTextarea1" className="form-label inline-block mb-2 text-white"
                     >Penjelasan:</label
                     >
-                    <div className="gap">
-                    ‎ 
-                    ‎ 
-                    ‎ 
-                    </div>
+                    
                     <textarea
                     className="
                         form-control
                         block
                         w-full
-                        h-full
+                        h-96
                         px-3
                         py-1.5
                         text-base
@@ -100,13 +91,13 @@ export default function LamanLaporan(){
                 leading-tight
                 uppercase
                 object-right
+                mx-32
                 ">Kirim</button>
             </div>
             </div>
             </div>
         
         </div>
-        </body>
 
             
         </>
