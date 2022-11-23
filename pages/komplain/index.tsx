@@ -97,7 +97,9 @@ export default function LamanLaporan(){
                 uppercase
                 object-right
                 rounded-full
-                ">Kirim</button>
+                "
+                >Kirim</button>
+
                 </div>
             </div>
             </div>
