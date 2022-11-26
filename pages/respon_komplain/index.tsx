@@ -6,13 +6,12 @@ export default function ResponKomplian(){
 
             <div className="flex-none p-4 m-2">
             <div className="relative">
-                
-                <div className="gap">
-                ‎ 
-                ‎ 
-                ‎ 
+            <div className="relative">
                 </div>
-
+                <div className="w-full ml-5">
+                </div>
+                <div className="relative">
+                </div>
                 
             </div>
             </div>

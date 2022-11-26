@@ -5,20 +5,24 @@ export default function LamanLaporan(){
             <div className="flex-none p-4 m-2">
             <div className="relative">
                 <div className="relative">
-                <button type="button" className="inline-block px-7 py-3.5 bg-gray-300 text-white font-medium text-xl leading-tight uppercase rounded shadow-md hover:bg-gray-900 hover:shadow-lg focus:bg-gray-900 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-900 active:shadow-lg transition duration-150 ease-in-out">Laporan</button>
+                <a href="/laporan">
+                    <button type="button" className="inline-block px-7 py-3.5 bg-gray-300 text-white font-medium text-xl leading-tight uppercase rounded shadow-md hover:bg-gray-900 hover:shadow-lg focus:bg-gray-900 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-900 active:shadow-lg transition duration-150 ease-in-out">Laporan</button>
+                </a>
                 </div>
                 <div className="w-full mt-5">
                 </div>
                 <div className="relative">
-                <button type="button" className="inline-block px-6 py-3.5 bg-gray-300 text-white font-medium text-xl leading-tight uppercase rounded shadow-md hover:bg-gray-900 hover:shadow-lg focus:bg-gray-900 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-900 active:shadow-lg transition duration-150 ease-in-out">Komplain</button>
+                <a href="?#">
+                    <button type="button" className="inline-block px-6 py-3.5 bg-gray-300 text-white font-medium text-xl leading-tight uppercase rounded shadow-md hover:bg-gray-900 hover:shadow-lg focus:bg-gray-900 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-900 active:shadow-lg transition duration-150 ease-in-out">Komplain</button>
+                </a>
                 </div>
                 
             </div>
             </div>
 
             
-            <div className="block rounded-lg shadow-lg bg-gray-400 w-1/2 h-auto text-left mb-40">
-            <div className="flex-none">
+            <div className="block rounded-lg shadow-lg bg-gray-400 w-1/2 h-auto text-left">
+            <form action="/api/submit-komplain" method="post"  className="flex-none">
             <div className="Submission1">
                 <div className="mb-3 w-full inline-flex">
                     <div className="ml-10 my-5">
@@ -46,6 +50,7 @@ export default function LamanLaporan(){
                         focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none
                     "
                     id="Judul"
+                    name="Judul"
                     placeholder="Judul Komplain"
                     />
                     </div>
@@ -78,6 +83,7 @@ export default function LamanLaporan(){
                         focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none
                     "
                     id="Penjelasan"
+                    name="Penjelasan"
                     placeholder="Penjelasan Komplain"
                     ></textarea>
                     </div>
@@ -102,7 +108,7 @@ export default function LamanLaporan(){
 
                 </div>
             </div>
-            </div>
+            </form>
             </div>
         
         </div>
