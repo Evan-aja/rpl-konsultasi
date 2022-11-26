@@ -38,6 +38,7 @@ model Dosen{
 
 model Laporan{
   ID Int @id @default(autoincrement())
+  Nama String?
   NIP_NIM String
   Penjelasan String?
   ResponLaporan ResponLaporan?
