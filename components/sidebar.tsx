@@ -5,9 +5,9 @@ export default function Sidebar(siapa:Siapa){
     if (siapa.siapa=="Dosen"){
         return (
             <>                    
-                <aside className="w-64 right-0 absolute h-screen" aria-label="Sidebar">
-                    <div className="overflow-y-auto py-4 px-3 bg-cyan rounded dark:bg-cyan h-screen">
-                        <ul className="mt-4 space-y-6">
+                <aside className="w-64 right-0 absolute" aria-label="Sidebar">
+                    <div className="overflow-y-auto py-4 px-3 bg-cyan rounded dark:bg-cyan">
+                        <ul className="mt-4 mb-4 space-y-6">
                             <li>
                                 <a href="#" className="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
                                 <svg width="16" height="16" viewBox="0 0 21 26" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -49,9 +49,9 @@ export default function Sidebar(siapa:Siapa){
     else if (siapa.siapa=="Admin"){
         return (
             <>                    
-                <aside className="w-64 right-0 absolute h-screen" aria-label="Sidebar">
-                    <div className="overflow-y-auto py-4 px-3 bg-cyan rounded dark:bg-cyan h-screen">
-                        <ul className="mt-4 space-y-6">
+                <aside className="w-64 right-0 absolute" aria-label="Sidebar">
+                    <div className="overflow-y-auto py-4 px-3 bg-cyan rounded dark:bg-cyan">
+                        <ul className="mt-4 mb-4 space-y-6">
                             <li>
                                 <a href="#" className="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
                                 <svg width="16" height="16" viewBox="0 0 21 26" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -108,9 +108,9 @@ export default function Sidebar(siapa:Siapa){
     }
     return (
         <>                    
-            <aside className="w-64 right-0 absolute h-screen" aria-label="Sidebar">
-                <div className="overflow-y-auto py-4 px-3 bg-cyan rounded dark:bg-cyan h-screen">
-                    <ul className="mt-4 space-y-6">
+            <aside className="w-64 right-0 absolute" aria-label="Sidebar">
+                <div className="overflow-y-auto py-4 px-3 bg-cyan rounded dark:bg-cyan">
+                    <ul className="mt-4 mb-4 space-y-6">
                         <li>
                             <a href="#" className="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
                             <svg width="16" height="16" viewBox="0 0 21 26" fill="none" xmlns="http://www.w3.org/2000/svg">
