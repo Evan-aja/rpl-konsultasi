@@ -51,7 +51,7 @@ export default function lamanLaporan(){
                 "
                 id="Nama"
                 name="Nama"
-                placeholder="Judul Komplain"
+                placeholder="Nama terlapor"
                 />
                 </div>
             </div>
