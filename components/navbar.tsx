@@ -22,7 +22,7 @@ export default function NavBar(){
                         <nav className="text-sm leading-6 font-semibold text-slate-700 dark:text-slate-200">
                         <ul className="flex space-x-8">
                             <li>
-                            <a className="hover:text-sky-500 dark:hover:text-sky-400" href="/logout">Keluar
+                            <a className="hover:text-sky-500 dark:hover:text-sky-400" href="#">Keluar
                             </a>
                             </li>
                         </ul>
@@ -38,26 +38,6 @@ export default function NavBar(){
                             </a>
                         </div>
                     </div>
-                    {/* <button type="button" className="ml-auto text-slate-500 w-8 h-8 -my-1 flex items-center justify-center hover:text-slate-600 lg:hidden dark:text-slate-400 dark:hover:text-slate-300">
-                        <span className="sr-only">Search
-                        </span>
-                        <svg width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                        <path d="m19 19-3.5-3.5">
-                        </path>
-                        <circle cx="11" cy="11" r="6">
-                        </circle>
-                        </svg>
-                    </button>
-                    <div className="ml-2 -my-1 lg:hidden">
-                        <button type="button" className="text-slate-500 w-8 h-8 flex items-center justify-center hover:text-slate-600 dark:text-slate-400 dark:hover:text-slate-300">
-                        <span className="sr-only">Navigation
-                        </span>
-                        <svg width="24" height="24" fill="none" aria-hidden="true">
-                            <path d="M12 6v.01M12 12v.01M12 18v.01M12 7a1 1 0 1 1 0-2 1 1 0 0 1 0 2Zm0 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Zm0 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-                            </path>
-                        </svg>
-                        </button>
-                    </div> */}
                     </div>
                 </div>
                 </div>

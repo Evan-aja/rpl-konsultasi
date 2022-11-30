@@ -25,7 +25,7 @@ export default function Sidebar(siapa:Siapa){
                                 </a>
                             </li>
                             <li>
-                                <a href="#" className="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+                                <a href="/laporan" className="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
                                 <svg width="16" height="16" viewBox="0 0 21 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M21 13L-1.14193e-06 25.1244L-8.1987e-08 0.875644L21 13Z" fill="white"/>
                                 </svg>
@@ -69,7 +69,7 @@ export default function Sidebar(siapa:Siapa){
                                 </a>
                             </li>
                             <li>
-                                <a href="#" className="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+                            <a href="/laporan" className="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
                                 <svg width="16" height="16" viewBox="0 0 21 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M21 13L-1.14193e-06 25.1244L-8.1987e-08 0.875644L21 13Z" fill="white"/>
                                 </svg>
@@ -85,7 +85,7 @@ export default function Sidebar(siapa:Siapa){
                                 </a>
                             </li>
                             <li>
-                                <a href="#" className="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+                                <a href="/respon_laporan" className="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
                                 <svg width="16" height="16" viewBox="0 0 21 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M21 13L-1.14193e-06 25.1244L-8.1987e-08 0.875644L21 13Z" fill="white"/>
                                 </svg>
@@ -93,7 +93,7 @@ export default function Sidebar(siapa:Siapa){
                                 </a>
                             </li>
                             <li>
-                                <a href="#" className="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+                                <a href="/respon_komplain" className="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
                                 <svg width="16" height="16" viewBox="0 0 21 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M21 13L-1.14193e-06 25.1244L-8.1987e-08 0.875644L21 13Z" fill="white"/>
                                 </svg>
@@ -128,7 +128,7 @@ export default function Sidebar(siapa:Siapa){
                             </a>
                         </li>
                         <li>
-                            <a href="#" className="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+                        <a href="/laporan" className="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
                             <svg width="16" height="16" viewBox="0 0 21 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M21 13L-1.14193e-06 25.1244L-8.1987e-08 0.875644L21 13Z" fill="white"/>
                             </svg>
