@@ -1,4 +1,4 @@
-export default function Laporan(){
+export default function lamanLaporan(){
     return(
         <>
             <div className="flex flex-nowrap">

@@ -1,6 +1,6 @@
-import { Laporan, PrismaClient } from '@prisma/client'
+import { PrismaClient } from '@prisma/client'
 
-export default async function handler() {
+export default async function getKomplain() {
   const prisma=new PrismaClient()
   prisma.$connect
   let komplain=await prisma.komplain.findMany()
