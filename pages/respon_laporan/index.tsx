@@ -21,6 +21,7 @@ export const getServerSideProps: GetServerSideProps = async () => {
 const ResponLaporan: React.FC<Props> = props =>{
     return (
         <> 
+            <div className="overflow-x-hidden overflow-y-auto">
            {props.laporan && props.laporan.map((i) => (
             <div className="body">
             <div className="flex flex-nowrap">
@@ -173,6 +174,8 @@ const ResponLaporan: React.FC<Props> = props =>{
         </div>
         </div>
         ))}
+        <div className="m-24"/>
+        </div>
         </>
     )
 }

@@ -1,6 +1,7 @@
 export default function lamanKomplain(){
     return(
         <>
+            <div className="overflow-x-hidden overflow-y-auto">
             <div className="flex flex-nowrap">
             <div className="flex-none p-4 m-2">
             <div className="relative">
@@ -113,7 +114,7 @@ export default function lamanKomplain(){
         
         </div>
 
-            
+        </div>
         </>
     )
 }

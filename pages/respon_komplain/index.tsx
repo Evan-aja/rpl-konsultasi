@@ -21,6 +21,7 @@ export const getServerSideProps: GetServerSideProps = async () => {
 const ResponKomplian: React.FC<Props> = props =>{
     return(
         <>
+            <div className="overflow-x-hidden overflow-y-auto">
            {props.komplain && props.komplain.map((i) => (
            <div className="body">
             <div className="flex flex-nowrap">
@@ -138,6 +139,8 @@ const ResponKomplian: React.FC<Props> = props =>{
         </div>
         </div>
         ))}
+        <div className="m-24"/>
+        </div>
         </>
     )
 }
