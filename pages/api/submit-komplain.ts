@@ -1,7 +1,7 @@
 import { PrismaClient } from '@prisma/client'
 import type { NextApiRequest, NextApiResponse } from 'next'
 
-export default async function handler(
+export default async function submitKomplain(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
@@ -16,6 +16,5 @@ export default async function handler(
     }
   })
   prisma.$disconnect
-  // res.status(200).json({ Nama: body.Nama,Nip_Nim: body.Nip_Nim, Penjelasan: body.Penjelasan })
-  res.status(200).redirect("/")
+  res.status(200).redirect("/komplain")
 }
